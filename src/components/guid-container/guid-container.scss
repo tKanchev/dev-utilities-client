@@ -1,0 +1,26 @@
+.guid-container {
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    &__textarea {
+        width: 500px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background: none;
+        color: $white-text-color;
+        font-weight: lighter;
+        resize: none;
+        border: none;
+        font-size: x-large;
+        cursor: pointer;
+    }
+    &__button {
+        width: 145px;
+        height: 45px;
+        background: no-repeat;
+        border: 1px solid $white-text-color;
+        color: $white-text-color;
+        cursor: pointer;
+        font-size: 16px;
+    }
+}

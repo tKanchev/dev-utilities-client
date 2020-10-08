@@ -1,0 +1,16 @@
+  
+@import './variables.scss';
+@import './components/navbar/navbar.scss';
+@import './components/home/home.scss';
+@import './components/guid-container/guid-container.scss';
+
+.App {
+    background-image: url(lamp.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
