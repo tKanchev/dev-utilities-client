@@ -1,8 +1,8 @@
 .guid-container {
-    margin-right: 80px;
+    margin-right: 15%;
     display: flex;
     flex-direction: column;
-    &__textarea {
+    &__guid {
         width: 500px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -13,14 +13,32 @@
         border: none;
         font-size: x-large;
         cursor: pointer;
+        &:hover {
+            text-shadow: 
+                0 0 0 whitesmoke,
+                0.5px 0px 0.5px whitesmoke,
+                0px 0px 0px whitesmoke,
+                0.5px 0px 0.5px whitesmoke;
+        }
     }
-    &__button {
-        width: 145px;
-        height: 45px;
-        background: no-repeat;
-        border: 1px solid $white-text-color;
-        color: $white-text-color;
-        cursor: pointer;
-        font-size: 16px;
+    &__button-container {
+        display: flex;
+        .button {
+            width: 145px;
+            height: 45px;
+            background: no-repeat;
+            border: 1px solid $white-text-color;
+            color: $white-text-color;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .message {
+            font-size: x-large;
+            margin-left: 90px;
+            &--copy {
+                cursor: pointer;
+            }
+        }
     }
+    
 }
