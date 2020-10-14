@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:alpine as guidsgen-client
 
 WORKDIR /app
 
@@ -6,6 +6,9 @@ COPY package*.json ./
 COPY . /app
 
 RUN npm install
-RUN npm rebuild node-sass
+RUN npm rebuild node-sass --verbose
+RUN npm run build --verbose
 
-CMD ["npm", "start"]
+FROM nginx:alpine
+COPY --from=guidsgen-client /app/dist/guidsgen-client /usr/share/nginx/html
+EXPOSE 80
