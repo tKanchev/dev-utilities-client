@@ -40,5 +40,77 @@
             }
         }
     }
-    
 }
+
+@media only screen 
+        and (max-width: 850px)
+        and (orientation : landscape) {
+            .guid-container {
+                margin-right: 15%;
+                width: 100vw;
+                margin-right: unset;
+                max-width: 100vw;
+                margin-top: 20px;
+                span {
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+                &__guid {
+                    width: 100vw;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                }
+                &__button-container {
+                    display: flex;
+                    .button {
+                        width: 145px;
+                        height: 35px;
+                        font-size: 12px;
+                    }
+                    .message {
+                        font-size: 14px;
+                        margin-left: 60px;
+                    }
+                }
+            }
+        }
+
+@media only screen 
+    and (max-width: 400px)
+    and (orientation : portrait) {
+        .guid-container {
+            margin-right: 15%;
+            width: 100vw;
+            margin-right: unset;
+            max-width: 100%;
+            margin-top: 30px;
+            span {
+                font-size: 18px;
+                margin-top: 10px;
+                text-align: center;
+            }
+            &__guid {
+                text-align: center;
+                width: 100vw;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+            &__button-container {
+                align-items: center;
+                flex-direction: column-reverse;
+                .button {
+                    width: unset;
+                    height: 30px;
+                    font-size: 12px;
+                    margin-top: 20px;
+                }
+                .message {
+                    height: 30px;
+                    font-size: 12px;
+                    margin-left: unset;
+                }
+            }
+        }
+    }

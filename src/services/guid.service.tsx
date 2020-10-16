@@ -5,7 +5,6 @@ class GuidService {
     private static guidApiRoute = REACT_APP_API_URL ? REACT_APP_API_URL : 'http://guidsgen-api.westeurope.azurecontainer.io/guid';
     
     public static getSingle(): Promise<any> {
-        console.log(process.env);
         return get(this.guidApiRoute);
     }
 
