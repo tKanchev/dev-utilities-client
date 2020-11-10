@@ -1,0 +1,29 @@
+.welcome-message {
+    &__about {
+        width: 400px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+@media only screen 
+        and (max-width: $media-query-max-width-landscape)
+        and (orientation : landscape) {
+            .welcome-message {
+                font-size: 20px;
+                &__about {
+                    font-size: 14px;
+                }
+            }
+        }
+@media only screen 
+    and (max-width: $media-query-max-width-portrait)
+    and (orientation : portrait) {
+        .welcome-message {
+            text-align: center;
+            font-size: 22px;
+            &__about {
+                font-size: 14px;
+            }
+        }
+    }

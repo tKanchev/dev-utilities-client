@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200px;
+    padding-right: 200px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    &__support-buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen 
+    and (max-width: $media-query-max-width-landscape)
+    and (orientation : landscape) {
+        .footer {
+            justify-content: center;
+            padding-right: unset;
+        }
+    }
+@media only screen 
+    and (max-width: $media-query-max-width-portrait)
+    and (orientation : portrait) {
+        .footer {
+            justify-content: center;
+            padding-right: unset;
+        }
+    }

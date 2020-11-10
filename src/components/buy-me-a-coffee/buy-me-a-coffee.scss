@@ -1,0 +1,34 @@
+.buy-me-a-coffee {
+    margin: 20px;
+    &__img {
+        width: 135px;
+    }
+}
+
+.buy-me-a-coffee-link {
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media only screen 
+    and (max-width: $media-query-max-width-landscape)
+    and (orientation : landscape) {
+        .buy-me-a-coffee {
+            display: flex;
+            &__img {
+                width: 135px;
+            }
+        }
+    }
+@media only screen 
+    and (max-width: $media-query-max-width-portrait)
+    and (orientation : portrait) {
+        .buy-me-a-coffee {
+            display: flex;
+            &__img {
+                width: 135px;
+            }
+        }
+    }

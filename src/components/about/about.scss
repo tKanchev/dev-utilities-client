@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__welcome {
+        font-size: 30px;
+    }
+    &__text {
+        width: 70vw;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+}
