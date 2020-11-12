@@ -4,8 +4,8 @@ COPY package*.json ./
 COPY . /app
 
 RUN npm install
-RUN npm rebuild node-sass --verbose
-RUN npm run build --verbose
+RUN npm rebuild node-sass --silent
+RUN npm run build --silent
 
 FROM nginx:alpine
 COPY --from=guidsgen-client /app/build /usr/share/nginx/html
