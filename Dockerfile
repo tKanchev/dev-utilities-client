@@ -4,10 +4,9 @@ COPY package*.json ./
 COPY . /app
 RUN apk add --no-cache --virtual .build-deps make gcc g++ python \
     && npm install --production --silent \
-    && npm rebuild node-sass --silent \
-    && npm run build --silent \
     && apk del .build-deps
 
+RUN npm install && npm rebuild node-sass --silent && npm run build --silent 
 
 FROM nginx:alpine
 COPY --from=guidsgen-client /app/build /usr/share/nginx/html
