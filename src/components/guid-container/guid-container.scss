@@ -41,6 +41,28 @@
     }
 }
 
+@media only screen and (max-width: 1140px) {
+    .guid-container {
+        span {
+            font-size: 18px;
+        }
+        &__guid {
+            font-size: 20px;
+        }
+        &__button-container {
+            .button {
+                width: 145px;
+                height: 35px;
+                font-size: 12px;
+            }
+            .message {
+                font-size: 14px;
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
 @media only screen 
         and (max-width: $media-query-max-width-landscape)
         and (orientation : landscape) {
