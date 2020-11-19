@@ -2,7 +2,7 @@ import { get, post } from './crud';
 const { REACT_APP_API_URL } = process.env;
 
 class GuidService {
-    private static guidApiRoute = REACT_APP_API_URL ? REACT_APP_API_URL : 'http://guidsgen-api.westeurope.azurecontainer.io/guid';
+    private static guidApiRoute = REACT_APP_API_URL ? REACT_APP_API_URL : 'https://guid-gen-api.azurewebsites.net/guid';
     
     public static getSingle(): Promise<any> {
         return get(this.guidApiRoute);
