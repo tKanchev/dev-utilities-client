@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import BuyMeACoffeeLink from '../buy-me-a-coffee/buy-me-a-coffee-link';
+import GitHubLink from '../github/github-link';
 import PatreonLink from '../patreon/patreon-link';
 
 interface INavbarProps {}
@@ -28,6 +29,7 @@ class Navbar extends Component<INavbarProps, INavbarState> {
             <div className='navbar'>
                 <Link className='navbar__item' to="/">Home</Link>
                 <Link className='navbar__item' to="/about">About</Link>
+                <GitHubLink/>
                 <PatreonLink />
                 <BuyMeACoffeeLink />
             </div>
