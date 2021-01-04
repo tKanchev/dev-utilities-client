@@ -1,4 +1,4 @@
-FROM node:alpine as guidsgen-client
+FROM node:12.19.0 as guidsgen-client
 
 WORKDIR /app
 COPY package*.json ./
